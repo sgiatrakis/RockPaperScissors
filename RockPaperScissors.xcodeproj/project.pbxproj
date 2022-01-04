@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		494A26A7CB54D8B6BBEB53F9 /* Pods_RockPaperScissors.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 982DE67F5ECB3F4FC897A901 /* Pods_RockPaperScissors.framework */; };
 		7095CB5C2784C5C5002C9911 /* RockPaperScissorsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7095CB5B2784C5C5002C9911 /* RockPaperScissorsApp.swift */; };
 		7095CB5E2784C5C5002C9911 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7095CB5D2784C5C5002C9911 /* ContentView.swift */; };
 		7095CB602784C5C6002C9911 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7095CB5F2784C5C6002C9911 /* Assets.xcassets */; };
@@ -14,6 +15,8 @@
 		7095CB6D2784C5C6002C9911 /* RockPaperScissorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7095CB6C2784C5C6002C9911 /* RockPaperScissorsTests.swift */; };
 		7095CB772784C5C6002C9911 /* RockPaperScissorsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7095CB762784C5C6002C9911 /* RockPaperScissorsUITests.swift */; };
 		7095CB792784C5C6002C9911 /* RockPaperScissorsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7095CB782784C5C6002C9911 /* RockPaperScissorsUITestsLaunchTests.swift */; };
+		98CFD107683E19FBF189FE1B /* Pods_RockPaperScissorsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4961FA3F8565FBC4AB25300F /* Pods_RockPaperScissorsTests.framework */; };
+		E075149B659F7782E5AF4B98 /* Pods_RockPaperScissors_RockPaperScissorsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 706D150CEDEF8AFADDD79314 /* Pods_RockPaperScissors_RockPaperScissorsUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		40F0E50829158B170DB6B00F /* Pods-RockPaperScissorsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RockPaperScissorsTests.debug.xcconfig"; path = "Target Support Files/Pods-RockPaperScissorsTests/Pods-RockPaperScissorsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4961FA3F8565FBC4AB25300F /* Pods_RockPaperScissorsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RockPaperScissorsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		547DE9C421849B8BB872C37E /* Pods-RockPaperScissors-RockPaperScissorsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RockPaperScissors-RockPaperScissorsUITests.debug.xcconfig"; path = "Target Support Files/Pods-RockPaperScissors-RockPaperScissorsUITests/Pods-RockPaperScissors-RockPaperScissorsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5A81A460288A2C166CE43115 /* Pods-RockPaperScissors-RockPaperScissorsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RockPaperScissors-RockPaperScissorsUITests.release.xcconfig"; path = "Target Support Files/Pods-RockPaperScissors-RockPaperScissorsUITests/Pods-RockPaperScissors-RockPaperScissorsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		706D150CEDEF8AFADDD79314 /* Pods_RockPaperScissors_RockPaperScissorsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RockPaperScissors_RockPaperScissorsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7095CB582784C5C5002C9911 /* RockPaperScissors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RockPaperScissors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7095CB5B2784C5C5002C9911 /* RockPaperScissorsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockPaperScissorsApp.swift; sourceTree = "<group>"; };
 		7095CB5D2784C5C5002C9911 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,6 +53,10 @@
 		7095CB762784C5C6002C9911 /* RockPaperScissorsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockPaperScissorsUITests.swift; sourceTree = "<group>"; };
 		7095CB782784C5C6002C9911 /* RockPaperScissorsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockPaperScissorsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		70FDC0B32784C84000AA8478 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		982DE67F5ECB3F4FC897A901 /* Pods_RockPaperScissors.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RockPaperScissors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEB63E9A00D7DBABC4E05507 /* Pods-RockPaperScissorsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RockPaperScissorsTests.release.xcconfig"; path = "Target Support Files/Pods-RockPaperScissorsTests/Pods-RockPaperScissorsTests.release.xcconfig"; sourceTree = "<group>"; };
+		CAA451548FCDB6F9D050F918 /* Pods-RockPaperScissors.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RockPaperScissors.release.xcconfig"; path = "Target Support Files/Pods-RockPaperScissors/Pods-RockPaperScissors.release.xcconfig"; sourceTree = "<group>"; };
+		CB0B75106DA5950AFAFF1E7E /* Pods-RockPaperScissors.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RockPaperScissors.debug.xcconfig"; path = "Target Support Files/Pods-RockPaperScissors/Pods-RockPaperScissors.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				494A26A7CB54D8B6BBEB53F9 /* Pods_RockPaperScissors.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98CFD107683E19FBF189FE1B /* Pods_RockPaperScissorsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,12 +80,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E075149B659F7782E5AF4B98 /* Pods_RockPaperScissors_RockPaperScissorsUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		134834D61EB6F6D35C3218B8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CB0B75106DA5950AFAFF1E7E /* Pods-RockPaperScissors.debug.xcconfig */,
+				CAA451548FCDB6F9D050F918 /* Pods-RockPaperScissors.release.xcconfig */,
+				547DE9C421849B8BB872C37E /* Pods-RockPaperScissors-RockPaperScissorsUITests.debug.xcconfig */,
+				5A81A460288A2C166CE43115 /* Pods-RockPaperScissors-RockPaperScissorsUITests.release.xcconfig */,
+				40F0E50829158B170DB6B00F /* Pods-RockPaperScissorsTests.debug.xcconfig */,
+				AEB63E9A00D7DBABC4E05507 /* Pods-RockPaperScissorsTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5653A15052A34A2E205359C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				982DE67F5ECB3F4FC897A901 /* Pods_RockPaperScissors.framework */,
+				706D150CEDEF8AFADDD79314 /* Pods_RockPaperScissors_RockPaperScissorsUITests.framework */,
+				4961FA3F8565FBC4AB25300F /* Pods_RockPaperScissorsTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7095CB4F2784C5C5002C9911 = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +118,8 @@
 				7095CB6B2784C5C6002C9911 /* RockPaperScissorsTests */,
 				7095CB752784C5C6002C9911 /* RockPaperScissorsUITests */,
 				7095CB592784C5C5002C9911 /* Products */,
+				134834D61EB6F6D35C3218B8 /* Pods */,
+				5653A15052A34A2E205359C3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -136,9 +177,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7095CB7C2784C5C6002C9911 /* Build configuration list for PBXNativeTarget "RockPaperScissors" */;
 			buildPhases = (
+				5DAF420C2F2C70FFA7DEA541 /* [CP] Check Pods Manifest.lock */,
 				7095CB542784C5C5002C9911 /* Sources */,
 				7095CB552784C5C5002C9911 /* Frameworks */,
 				7095CB562784C5C5002C9911 /* Resources */,
+				132914EE6EE903EE64DF5C24 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -153,6 +196,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7095CB7F2784C5C6002C9911 /* Build configuration list for PBXNativeTarget "RockPaperScissorsTests" */;
 			buildPhases = (
+				00F617E5582C4AADEE170FD2 /* [CP] Check Pods Manifest.lock */,
 				7095CB642784C5C6002C9911 /* Sources */,
 				7095CB652784C5C6002C9911 /* Frameworks */,
 				7095CB662784C5C6002C9911 /* Resources */,
@@ -171,9 +215,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7095CB822784C5C6002C9911 /* Build configuration list for PBXNativeTarget "RockPaperScissorsUITests" */;
 			buildPhases = (
+				7C90B2B010DA620FA4F300BF /* [CP] Check Pods Manifest.lock */,
 				7095CB6E2784C5C6002C9911 /* Sources */,
 				7095CB6F2784C5C6002C9911 /* Frameworks */,
 				7095CB702784C5C6002C9911 /* Resources */,
+				2F53B89BFF2F83C634CB4A51 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,6 +299,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00F617E5582C4AADEE170FD2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RockPaperScissorsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		132914EE6EE903EE64DF5C24 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RockPaperScissors/Pods-RockPaperScissors-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RockPaperScissors/Pods-RockPaperScissors-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RockPaperScissors/Pods-RockPaperScissors-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2F53B89BFF2F83C634CB4A51 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RockPaperScissors-RockPaperScissorsUITests/Pods-RockPaperScissors-RockPaperScissorsUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RockPaperScissors-RockPaperScissorsUITests/Pods-RockPaperScissors-RockPaperScissorsUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RockPaperScissors-RockPaperScissorsUITests/Pods-RockPaperScissors-RockPaperScissorsUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5DAF420C2F2C70FFA7DEA541 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RockPaperScissors-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C90B2B010DA620FA4F300BF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RockPaperScissors-RockPaperScissorsUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7095CB542784C5C5002C9911 /* Sources */ = {
@@ -415,6 +564,7 @@
 		};
 		7095CB7D2784C5C6002C9911 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB0B75106DA5950AFAFF1E7E /* Pods-RockPaperScissors.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -445,6 +595,7 @@
 		};
 		7095CB7E2784C5C6002C9911 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAA451548FCDB6F9D050F918 /* Pods-RockPaperScissors.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -475,6 +626,7 @@
 		};
 		7095CB802784C5C6002C9911 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40F0E50829158B170DB6B00F /* Pods-RockPaperScissorsTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -495,6 +647,7 @@
 		};
 		7095CB812784C5C6002C9911 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AEB63E9A00D7DBABC4E05507 /* Pods-RockPaperScissorsTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +668,7 @@
 		};
 		7095CB832784C5C6002C9911 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 547DE9C421849B8BB872C37E /* Pods-RockPaperScissors-RockPaperScissorsUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -533,6 +687,7 @@
 		};
 		7095CB842784C5C6002C9911 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A81A460288A2C166CE43115 /* Pods-RockPaperScissors-RockPaperScissorsUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
