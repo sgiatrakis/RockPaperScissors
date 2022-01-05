@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  StartingView.swift
 //  RockPaperScissors
 //
 //  Created by Lysimachos Giatrakis on 4/1/22.
@@ -7,15 +7,15 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct StartingView: View {
     var body: some View {
         Text("Hello, world!")
             .padding()
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct StartingView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        StartingView()
     }
 }

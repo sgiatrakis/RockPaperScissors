@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		494A26A7CB54D8B6BBEB53F9 /* Pods_RockPaperScissors.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 982DE67F5ECB3F4FC897A901 /* Pods_RockPaperScissors.framework */; };
 		7095CB5C2784C5C5002C9911 /* RockPaperScissorsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7095CB5B2784C5C5002C9911 /* RockPaperScissorsApp.swift */; };
-		7095CB5E2784C5C5002C9911 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7095CB5D2784C5C5002C9911 /* ContentView.swift */; };
+		7095CB5E2784C5C5002C9911 /* StartingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7095CB5D2784C5C5002C9911 /* StartingView.swift */; };
 		7095CB602784C5C6002C9911 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7095CB5F2784C5C6002C9911 /* Assets.xcassets */; };
 		7095CB632784C5C6002C9911 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7095CB622784C5C6002C9911 /* Preview Assets.xcassets */; };
 		7095CB6D2784C5C6002C9911 /* RockPaperScissorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7095CB6C2784C5C6002C9911 /* RockPaperScissorsTests.swift */; };
-		7095CB772784C5C6002C9911 /* RockPaperScissorsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7095CB762784C5C6002C9911 /* RockPaperScissorsUITests.swift */; };
-		7095CB792784C5C6002C9911 /* RockPaperScissorsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7095CB782784C5C6002C9911 /* RockPaperScissorsUITestsLaunchTests.swift */; };
+		70D28E742785BEDC007886A2 /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D28E732785BEDC007886A2 /* RequestBuilder.swift */; };
+		70D28E772785BF3E007886A2 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D28E762785BF3E007886A2 /* Network.swift */; };
+		70D28E792785BFE8007886A2 /* BTCResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D28E782785BFE8007886A2 /* BTCResponse.swift */; };
+		70D28E7B2785C6AE007886A2 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D28E7A2785C6AE007886A2 /* Repository.swift */; };
 		98CFD107683E19FBF189FE1B /* Pods_RockPaperScissorsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4961FA3F8565FBC4AB25300F /* Pods_RockPaperScissorsTests.framework */; };
 		E075149B659F7782E5AF4B98 /* Pods_RockPaperScissors_RockPaperScissorsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 706D150CEDEF8AFADDD79314 /* Pods_RockPaperScissors_RockPaperScissorsUITests.framework */; };
 /* End PBXBuildFile section */
@@ -44,14 +46,16 @@
 		706D150CEDEF8AFADDD79314 /* Pods_RockPaperScissors_RockPaperScissorsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RockPaperScissors_RockPaperScissorsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7095CB582784C5C5002C9911 /* RockPaperScissors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RockPaperScissors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7095CB5B2784C5C5002C9911 /* RockPaperScissorsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockPaperScissorsApp.swift; sourceTree = "<group>"; };
-		7095CB5D2784C5C5002C9911 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7095CB5D2784C5C5002C9911 /* StartingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartingView.swift; sourceTree = "<group>"; };
 		7095CB5F2784C5C6002C9911 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7095CB622784C5C6002C9911 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7095CB682784C5C6002C9911 /* RockPaperScissorsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RockPaperScissorsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7095CB6C2784C5C6002C9911 /* RockPaperScissorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockPaperScissorsTests.swift; sourceTree = "<group>"; };
 		7095CB722784C5C6002C9911 /* RockPaperScissorsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RockPaperScissorsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7095CB762784C5C6002C9911 /* RockPaperScissorsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockPaperScissorsUITests.swift; sourceTree = "<group>"; };
-		7095CB782784C5C6002C9911 /* RockPaperScissorsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockPaperScissorsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		70D28E732785BEDC007886A2 /* RequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
+		70D28E762785BF3E007886A2 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		70D28E782785BFE8007886A2 /* BTCResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTCResponse.swift; sourceTree = "<group>"; };
+		70D28E7A2785C6AE007886A2 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		70FDC0B32784C84000AA8478 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		982DE67F5ECB3F4FC897A901 /* Pods_RockPaperScissors.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RockPaperScissors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEB63E9A00D7DBABC4E05507 /* Pods-RockPaperScissorsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RockPaperScissorsTests.release.xcconfig"; path = "Target Support Files/Pods-RockPaperScissorsTests/Pods-RockPaperScissorsTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -97,7 +101,6 @@
 				40F0E50829158B170DB6B00F /* Pods-RockPaperScissorsTests.debug.xcconfig */,
 				AEB63E9A00D7DBABC4E05507 /* Pods-RockPaperScissorsTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -116,7 +119,6 @@
 			children = (
 				7095CB5A2784C5C5002C9911 /* RockPaperScissors */,
 				7095CB6B2784C5C6002C9911 /* RockPaperScissorsTests */,
-				7095CB752784C5C6002C9911 /* RockPaperScissorsUITests */,
 				7095CB592784C5C5002C9911 /* Products */,
 				134834D61EB6F6D35C3218B8 /* Pods */,
 				5653A15052A34A2E205359C3 /* Frameworks */,
@@ -136,8 +138,8 @@
 		7095CB5A2784C5C5002C9911 /* RockPaperScissors */ = {
 			isa = PBXGroup;
 			children = (
-				7095CB5B2784C5C5002C9911 /* RockPaperScissorsApp.swift */,
-				7095CB5D2784C5C5002C9911 /* ContentView.swift */,
+				70D28E722785BEA1007886A2 /* UI */,
+				70D28E712785BE94007886A2 /* API */,
 				7095CB5F2784C5C6002C9911 /* Assets.xcassets */,
 				70FDC0B32784C84000AA8478 /* Info.plist */,
 				7095CB612784C5C6002C9911 /* Preview Content */,
@@ -161,13 +163,32 @@
 			path = RockPaperScissorsTests;
 			sourceTree = "<group>";
 		};
-		7095CB752784C5C6002C9911 /* RockPaperScissorsUITests */ = {
+		70D28E712785BE94007886A2 /* API */ = {
 			isa = PBXGroup;
 			children = (
-				7095CB762784C5C6002C9911 /* RockPaperScissorsUITests.swift */,
-				7095CB782784C5C6002C9911 /* RockPaperScissorsUITestsLaunchTests.swift */,
+				70D28E752785BF30007886A2 /* Responses */,
+				70D28E732785BEDC007886A2 /* RequestBuilder.swift */,
+				70D28E762785BF3E007886A2 /* Network.swift */,
+				70D28E7A2785C6AE007886A2 /* Repository.swift */,
 			);
-			path = RockPaperScissorsUITests;
+			path = API;
+			sourceTree = "<group>";
+		};
+		70D28E722785BEA1007886A2 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				7095CB5B2784C5C5002C9911 /* RockPaperScissorsApp.swift */,
+				7095CB5D2784C5C5002C9911 /* StartingView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		70D28E752785BF30007886A2 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				70D28E782785BFE8007886A2 /* BTCResponse.swift */,
+			);
+			path = Responses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -408,8 +429,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7095CB5E2784C5C5002C9911 /* ContentView.swift in Sources */,
+				70D28E742785BEDC007886A2 /* RequestBuilder.swift in Sources */,
+				70D28E792785BFE8007886A2 /* BTCResponse.swift in Sources */,
+				7095CB5E2784C5C5002C9911 /* StartingView.swift in Sources */,
+				70D28E772785BF3E007886A2 /* Network.swift in Sources */,
 				7095CB5C2784C5C5002C9911 /* RockPaperScissorsApp.swift in Sources */,
+				70D28E7B2785C6AE007886A2 /* Repository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,8 +450,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7095CB772784C5C6002C9911 /* RockPaperScissorsUITests.swift in Sources */,
-				7095CB792784C5C6002C9911 /* RockPaperScissorsUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
