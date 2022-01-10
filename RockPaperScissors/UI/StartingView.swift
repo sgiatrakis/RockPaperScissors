@@ -12,20 +12,23 @@ struct StartingView: View {
         NavigationView {
             BaseView() {
                 VStack(spacing: 20) {
-                    Text("Welcome to the game!")
+                    Text("Rock-Paper-Scissors Game App")
                     .padding(.horizontal)
                     .frame(minWidth: .none, maxWidth: .infinity, minHeight: .none, maxHeight: .none, alignment: .topLeading)
-                    NavigationLink(destination: GameView()) {
-                        Text("PLAY NOW")
-                            .foregroundColor(.white)
-                            .bold()
-                            .padding(10)
-                            .background(.blue)
-                            .clipShape(Capsule())
+                    VStack(spacing: 40) {
+                        NavigationLink(destination: GameView()) {
+                            BaseTextLink(customText: "PLAY GAME!")
+                        }
+                        NavigationLink(destination: GameView()) {
+                            BaseTextLink(customText: "LEADERBOARD", bgColor: .pink)
+                        }
+                        NavigationLink(destination: GameView()) {
+                            BaseTextLink(customText: "ABOUT", fgColor: .yellow, bgColor: .indigo)
+                        }
                     }
                     .padding(.top, 30)
                     Spacer()
-                    .navigationTitle("Rock-Paper-Scissors")
+                    .navigationTitle("Welcome!")
                 }
             }
         }

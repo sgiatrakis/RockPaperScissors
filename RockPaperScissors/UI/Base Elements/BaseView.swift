@@ -5,7 +5,6 @@
 //  Created by Lysimachos Giatrakis on 10/1/22.
 //
 
-import Foundation
 import SwiftUI
 
 struct BaseView<Content: View>: View {
