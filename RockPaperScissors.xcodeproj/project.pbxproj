@@ -13,6 +13,9 @@
 		7095CB602784C5C6002C9911 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7095CB5F2784C5C6002C9911 /* Assets.xcassets */; };
 		7095CB632784C5C6002C9911 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7095CB622784C5C6002C9911 /* Preview Assets.xcassets */; };
 		7095CB6D2784C5C6002C9911 /* RockPaperScissorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7095CB6C2784C5C6002C9911 /* RockPaperScissorsTests.swift */; };
+		70984A90278CC66B004427AE /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70984A8F278CC66B004427AE /* BaseView.swift */; };
+		70984A92278CC6B1004427AE /* BaseAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70984A91278CC6B1004427AE /* BaseAlert.swift */; };
+		70984A94278CC799004427AE /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70984A93278CC799004427AE /* GameView.swift */; };
 		70D28E742785BEDC007886A2 /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D28E732785BEDC007886A2 /* RequestBuilder.swift */; };
 		70D28E772785BF3E007886A2 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D28E762785BF3E007886A2 /* Network.swift */; };
 		70D28E792785BFE8007886A2 /* BTCResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D28E782785BFE8007886A2 /* BTCResponse.swift */; };
@@ -52,6 +55,9 @@
 		7095CB682784C5C6002C9911 /* RockPaperScissorsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RockPaperScissorsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7095CB6C2784C5C6002C9911 /* RockPaperScissorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockPaperScissorsTests.swift; sourceTree = "<group>"; };
 		7095CB722784C5C6002C9911 /* RockPaperScissorsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RockPaperScissorsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		70984A8F278CC66B004427AE /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		70984A91278CC6B1004427AE /* BaseAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAlert.swift; sourceTree = "<group>"; };
+		70984A93278CC799004427AE /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		70D28E732785BEDC007886A2 /* RequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
 		70D28E762785BF3E007886A2 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		70D28E782785BFE8007886A2 /* BTCResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTCResponse.swift; sourceTree = "<group>"; };
@@ -163,6 +169,15 @@
 			path = RockPaperScissorsTests;
 			sourceTree = "<group>";
 		};
+		70984A8E278CC61F004427AE /* Base Elements */ = {
+			isa = PBXGroup;
+			children = (
+				70984A8F278CC66B004427AE /* BaseView.swift */,
+				70984A91278CC6B1004427AE /* BaseAlert.swift */,
+			);
+			path = "Base Elements";
+			sourceTree = "<group>";
+		};
 		70D28E712785BE94007886A2 /* API */ = {
 			isa = PBXGroup;
 			children = (
@@ -177,8 +192,10 @@
 		70D28E722785BEA1007886A2 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				70984A8E278CC61F004427AE /* Base Elements */,
 				7095CB5B2784C5C5002C9911 /* RockPaperScissorsApp.swift */,
 				7095CB5D2784C5C5002C9911 /* StartingView.swift */,
+				70984A93278CC799004427AE /* GameView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -433,6 +450,9 @@
 				70D28E792785BFE8007886A2 /* BTCResponse.swift in Sources */,
 				7095CB5E2784C5C5002C9911 /* StartingView.swift in Sources */,
 				70D28E772785BF3E007886A2 /* Network.swift in Sources */,
+				70984A94278CC799004427AE /* GameView.swift in Sources */,
+				70984A90278CC66B004427AE /* BaseView.swift in Sources */,
+				70984A92278CC6B1004427AE /* BaseAlert.swift in Sources */,
 				7095CB5C2784C5C5002C9911 /* RockPaperScissorsApp.swift in Sources */,
 				70D28E7B2785C6AE007886A2 /* Repository.swift in Sources */,
 			);
