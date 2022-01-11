@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct GameView: View {
+    
+    @StateObject var viewModel = GameViewModel()
+    
     var body: some View {
         NavigationView {
             BaseView() {
@@ -15,6 +18,7 @@ struct GameView: View {
             }
         }
     }
+    
 }
 
 

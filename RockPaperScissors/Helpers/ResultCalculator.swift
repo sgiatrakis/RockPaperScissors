@@ -1,0 +1,49 @@
+//
+//  ResultCalculator.swift
+//  RockPaperScissors
+//
+//  Created by Lysimachos Giatrakis on 11/1/22.
+//
+
+import Foundation
+
+public enum UserChoice {
+    case rock
+    case scissors
+    case paper
+}
+
+
+class ResultCalculator {
+    
+    public static let shared = ResultCalculator()
+    
+    public func fetchCPUResult(rate: String) -> UserChoice? {
+        // Curent seconds
+        let now = TimeHelper.shared.getCurrentSeconds()
+        
+        // Last Digit of BTC Rate
+        let lastDigit = String(rate.last ?? "0")
+        guard let lastDigitInt = Int(lastDigit) else { return nil }
+        
+        // Result
+        let result = now + lastDigitInt
+        
+        // Last Char of Result
+        guard let resultLastChar = String(result).last else { return nil }
+        let resultLastString = String(resultLastChar)
+        guard let resultLastInt = Int(resultLastString) else { return nil }
+        
+        switch resultLastInt {
+        case 1,4,7:
+            return UserChoice.rock
+        case 2,5,8:
+            return UserChoice.scissors
+        case 3,6,9:
+            return UserChoice.paper
+        default:
+            return nil
+        }
+    }
+    
+}

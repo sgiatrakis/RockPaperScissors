@@ -18,6 +18,11 @@
 		70984A94278CC799004427AE /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70984A93278CC799004427AE /* GameView.swift */; };
 		70984A96278CC993004427AE /* BaseTextLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70984A95278CC993004427AE /* BaseTextLink.swift */; };
 		70984A98278CCA3D004427AE /* BaseLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70984A97278CCA3D004427AE /* BaseLoader.swift */; };
+		70984A9C278DABE8004427AE /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70984A9B278DABE8004427AE /* GameViewModel.swift */; };
+		70984A9E278DAC14004427AE /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70984A9D278DAC14004427AE /* BaseViewModel.swift */; };
+		70984AA1278DB0A1004427AE /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70984AA0278DB0A1004427AE /* Date+Extension.swift */; };
+		70984AA4278DC43C004427AE /* TimeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70984AA3278DC43C004427AE /* TimeHelper.swift */; };
+		70984AA6278DC98D004427AE /* ResultCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70984AA5278DC98D004427AE /* ResultCalculator.swift */; };
 		70D28E742785BEDC007886A2 /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D28E732785BEDC007886A2 /* RequestBuilder.swift */; };
 		70D28E772785BF3E007886A2 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D28E762785BF3E007886A2 /* Network.swift */; };
 		70D28E792785BFE8007886A2 /* BTCResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D28E782785BFE8007886A2 /* BTCResponse.swift */; };
@@ -62,6 +67,11 @@
 		70984A93278CC799004427AE /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		70984A95278CC993004427AE /* BaseTextLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTextLink.swift; sourceTree = "<group>"; };
 		70984A97278CCA3D004427AE /* BaseLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseLoader.swift; sourceTree = "<group>"; };
+		70984A9B278DABE8004427AE /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		70984A9D278DAC14004427AE /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		70984AA0278DB0A1004427AE /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		70984AA3278DC43C004427AE /* TimeHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeHelper.swift; sourceTree = "<group>"; };
+		70984AA5278DC98D004427AE /* ResultCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultCalculator.swift; sourceTree = "<group>"; };
 		70D28E732785BEDC007886A2 /* RequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
 		70D28E762785BF3E007886A2 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		70D28E782785BFE8007886A2 /* BTCResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTCResponse.swift; sourceTree = "<group>"; };
@@ -148,8 +158,9 @@
 		7095CB5A2784C5C5002C9911 /* RockPaperScissors */ = {
 			isa = PBXGroup;
 			children = (
-				70D28E722785BEA1007886A2 /* UI */,
 				70D28E712785BE94007886A2 /* API */,
+				70D28E722785BEA1007886A2 /* UI */,
+				70984A9F278DAEB1004427AE /* Helpers */,
 				7095CB5F2784C5C6002C9911 /* Assets.xcassets */,
 				70FDC0B32784C84000AA8478 /* Info.plist */,
 				7095CB612784C5C6002C9911 /* Preview Content */,
@@ -177,11 +188,47 @@
 			isa = PBXGroup;
 			children = (
 				70984A8F278CC66B004427AE /* BaseView.swift */,
+				70984A9D278DAC14004427AE /* BaseViewModel.swift */,
 				70984A91278CC6B1004427AE /* BaseAlert.swift */,
 				70984A95278CC993004427AE /* BaseTextLink.swift */,
 				70984A97278CCA3D004427AE /* BaseLoader.swift */,
 			);
 			path = "Base Elements";
+			sourceTree = "<group>";
+		};
+		70984A99278DABCB004427AE /* Starting */ = {
+			isa = PBXGroup;
+			children = (
+				7095CB5D2784C5C5002C9911 /* StartingView.swift */,
+			);
+			path = Starting;
+			sourceTree = "<group>";
+		};
+		70984A9A278DABD2004427AE /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				70984A93278CC799004427AE /* GameView.swift */,
+				70984A9B278DABE8004427AE /* GameViewModel.swift */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		70984A9F278DAEB1004427AE /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				70984AA2278DB0A9004427AE /* Extensions */,
+				70984AA3278DC43C004427AE /* TimeHelper.swift */,
+				70984AA5278DC98D004427AE /* ResultCalculator.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		70984AA2278DB0A9004427AE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				70984AA0278DB0A1004427AE /* Date+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		70D28E712785BE94007886A2 /* API */ = {
@@ -199,9 +246,9 @@
 			isa = PBXGroup;
 			children = (
 				70984A8E278CC61F004427AE /* Base Elements */,
+				70984A9A278DABD2004427AE /* Game */,
+				70984A99278DABCB004427AE /* Starting */,
 				7095CB5B2784C5C5002C9911 /* RockPaperScissorsApp.swift */,
-				7095CB5D2784C5C5002C9911 /* StartingView.swift */,
-				70984A93278CC799004427AE /* GameView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -452,15 +499,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70984A9C278DABE8004427AE /* GameViewModel.swift in Sources */,
 				70D28E742785BEDC007886A2 /* RequestBuilder.swift in Sources */,
 				70D28E792785BFE8007886A2 /* BTCResponse.swift in Sources */,
 				7095CB5E2784C5C5002C9911 /* StartingView.swift in Sources */,
 				70D28E772785BF3E007886A2 /* Network.swift in Sources */,
 				70984A94278CC799004427AE /* GameView.swift in Sources */,
 				70984A98278CCA3D004427AE /* BaseLoader.swift in Sources */,
+				70984A9E278DAC14004427AE /* BaseViewModel.swift in Sources */,
 				70984A90278CC66B004427AE /* BaseView.swift in Sources */,
 				70984A96278CC993004427AE /* BaseTextLink.swift in Sources */,
 				70984A92278CC6B1004427AE /* BaseAlert.swift in Sources */,
+				70984AA6278DC98D004427AE /* ResultCalculator.swift in Sources */,
+				70984AA4278DC43C004427AE /* TimeHelper.swift in Sources */,
+				70984AA1278DB0A1004427AE /* Date+Extension.swift in Sources */,
 				7095CB5C2784C5C5002C9911 /* RockPaperScissorsApp.swift in Sources */,
 				70D28E7B2785C6AE007886A2 /* Repository.swift in Sources */,
 			);
