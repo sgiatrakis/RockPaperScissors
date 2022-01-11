@@ -36,7 +36,10 @@ class GameViewModel: BaseViewModel {
             
             print("VM Fetch Resulut: \(safeBtcPrices)")
             
-            let result = ResultCalculator.shared.fetchCPUResult(rate: safeBtcPrices.bpi.usd.rateText)
+            // Curent seconds
+            let now = TimeHelper.shared.getCurrentSeconds()
+            
+            let result = ResultCalculator.shared.fetchCPUResult(seconds: now, rate: safeBtcPrices.bpi.usd.rateText)
             
         }
     }

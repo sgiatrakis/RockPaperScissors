@@ -10,9 +10,13 @@ import SwiftUI
 struct StartingView: View {
     var body: some View {
         NavigationView {
-            BaseView() {
+            BaseView(showTopLine: false) {
                 VStack(spacing: 20) {
-                    Text("Rock-Paper-Scissors Game App")
+                    Group {
+                        Text("Welcome User!")
+                            .bold()
+                        Text("Rock-Paper-Scissors Game App")
+                    }
                     .padding(.horizontal)
                     .frame(minWidth: .none, maxWidth: .infinity, minHeight: .none, maxHeight: .none, alignment: .topLeading)
                     VStack(spacing: 40) {
@@ -28,7 +32,7 @@ struct StartingView: View {
                     }
                     .padding(.top, 30)
                     Spacer()
-                    .navigationTitle("Welcome!")
+                    .navigationTitle("Home")
                 }
             }
         }

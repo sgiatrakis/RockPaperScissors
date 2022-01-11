@@ -18,16 +18,13 @@ class ResultCalculator {
     
     public static let shared = ResultCalculator()
     
-    public func fetchCPUResult(rate: String) -> UserChoice? {
-        // Curent seconds
-        let now = TimeHelper.shared.getCurrentSeconds()
-        
+    public func fetchCPUResult(seconds: Int, rate: String) -> UserChoice? {        
         // Last Digit of BTC Rate
         let lastDigit = String(rate.last ?? "0")
         guard let lastDigitInt = Int(lastDigit) else { return nil }
         
         // Result
-        let result = now + lastDigitInt
+        let result = seconds + lastDigitInt
         
         // Last Char of Result
         guard let resultLastChar = String(result).last else { return nil }
