@@ -23,6 +23,7 @@
 		70984AA1278DB0A1004427AE /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70984AA0278DB0A1004427AE /* Date+Extension.swift */; };
 		70984AA4278DC43C004427AE /* TimeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70984AA3278DC43C004427AE /* TimeHelper.swift */; };
 		70984AA6278DC98D004427AE /* ResultCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70984AA5278DC98D004427AE /* ResultCalculator.swift */; };
+		70A5039C2790A5BA008AB3ED /* AntiCheatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A5039B2790A5BA008AB3ED /* AntiCheatView.swift */; };
 		70AF55DF27905F5900C2695B /* GameEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AF55DE27905F5900C2695B /* GameEngine.swift */; };
 		70AF55E12790620A00C2695B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AF55E02790620A00C2695B /* Constants.swift */; };
 		70D28E742785BEDC007886A2 /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D28E732785BEDC007886A2 /* RequestBuilder.swift */; };
@@ -74,6 +75,7 @@
 		70984AA0278DB0A1004427AE /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		70984AA3278DC43C004427AE /* TimeHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeHelper.swift; sourceTree = "<group>"; };
 		70984AA5278DC98D004427AE /* ResultCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultCalculator.swift; sourceTree = "<group>"; };
+		70A5039B2790A5BA008AB3ED /* AntiCheatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AntiCheatView.swift; sourceTree = "<group>"; };
 		70AF55DE27905F5900C2695B /* GameEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameEngine.swift; sourceTree = "<group>"; };
 		70AF55E02790620A00C2695B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		70D28E732785BEDC007886A2 /* RequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
@@ -237,6 +239,14 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		70A5039A2790A5A9008AB3ED /* Anti-Cheat */ = {
+			isa = PBXGroup;
+			children = (
+				70A5039B2790A5BA008AB3ED /* AntiCheatView.swift */,
+			);
+			path = "Anti-Cheat";
+			sourceTree = "<group>";
+		};
 		70D28E712785BE94007886A2 /* API */ = {
 			isa = PBXGroup;
 			children = (
@@ -253,6 +263,7 @@
 			children = (
 				70984A8E278CC61F004427AE /* Base Elements */,
 				70984A9A278DABD2004427AE /* Game */,
+				70A5039A2790A5A9008AB3ED /* Anti-Cheat */,
 				70984A99278DABCB004427AE /* Starting */,
 				7095CB5B2784C5C5002C9911 /* RockPaperScissorsApp.swift */,
 			);
@@ -505,6 +516,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70A5039C2790A5BA008AB3ED /* AntiCheatView.swift in Sources */,
 				70984A9C278DABE8004427AE /* GameViewModel.swift in Sources */,
 				70AF55DF27905F5900C2695B /* GameEngine.swift in Sources */,
 				70D28E742785BEDC007886A2 /* RequestBuilder.swift in Sources */,

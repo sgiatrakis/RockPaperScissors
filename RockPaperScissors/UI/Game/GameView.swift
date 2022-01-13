@@ -76,12 +76,12 @@ struct GameView: View {
                         Text("\(viewModel.gameEngine.gameResponse.gameResult.rawValue) \(viewModel.gameEngine.gameResponse.descriptionText)")
                     }.opacity(showResults ? 1 : 0)
                         .padding(.top, 15)
-                    Button {
-                        // TODO
-                    } label: {
+                    NavigationLink(destination: AntiCheatView(time: viewModel.currentTime,
+                                                              seconds: String(viewModel.currentSeconds),
+                                                              btcPrice: viewModel.btcPrice,
+                                                              cpuAnswer: viewModel.cpuAnswer ?? .rock)) {
                         BaseTextLink(customText: "CPU ANTI-CHEAT", bgColor: .cyan)
-                            .opacity(showResults ? 1.0 : 0.0)
-                    }
+                    }.opacity(showResults ? 1.0 : 0.0)
                     Spacer()
                 }
             } else {

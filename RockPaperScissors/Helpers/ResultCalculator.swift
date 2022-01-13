@@ -23,7 +23,7 @@ class ResultCalculator {
         guard let resultLastChar = String(result).last else { return nil }
         let resultLastString = String(resultLastChar)
         guard let resultLastInt = Int(resultLastString) else { return nil }
-        
+                
         switch resultLastInt {
         case 1,4,7:
             return UserChoice.rock
