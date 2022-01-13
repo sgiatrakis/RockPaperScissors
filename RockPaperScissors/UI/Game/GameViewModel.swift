@@ -11,6 +11,8 @@ class GameViewModel: BaseViewModel {
     
     @Published var cpuAnswer: UserChoice?
     @Published var userAnswer: UserChoice?
+    @Published private (set) var currentTime: String = ""
+    
     
     let gameEngine = GameEngine()
     
@@ -19,7 +21,7 @@ class GameViewModel: BaseViewModel {
         fetchData()
     }
     
-    public func fetchData() {
+    private func fetchData() {
         Repository.shared.fetchBTCPrices { [weak self] btcPrices, error in
             guard let self = self else { return }
             
@@ -39,15 +41,26 @@ class GameViewModel: BaseViewModel {
             
             print("VM Fetch Resulut: \(safeBtcPrices)")
             
-            // Curent seconds
-            let now = TimeHelper.shared.getCurrentSeconds()
+            // Curent Time CPU locked it's answer
+            self.currentTime = TimeHelper.shared.getCurrentTime()
+            // CPU Calculated Result
+            let cpuResult = ResultCalculator.shared.fetchCPUResult(seconds: TimeHelper.shared.getCurrentSeconds(), rate: safeBtcPrices.bpi.usd.rateText)
             
-            self.cpuAnswer = ResultCalculator.shared.fetchCPUResult(seconds: now, rate: safeBtcPrices.bpi.usd.rateText)
+            // If ResultCalculator returns nil, that means we have a resultLastInt equal to 0 and we need to re-fetch for a different result.
+            guard cpuResult != nil else {
+                self.isFetched = false
+                self.fetchData()
+                return
+            }
+            
+            self.cpuAnswer = cpuResult
         }
     }
     
-    private func getGameResult() -> String {
-        return ""
+    public func restartGame() {
+        cpuAnswer = nil
+        userAnswer = nil
+        fetchData()
     }
     
 }

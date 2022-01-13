@@ -57,7 +57,7 @@ class GameEngine {
             gameResponse = GameResponse(gameResult: .user, descriptionText: rockBeatsScissors)
             return gameResponse
         case (.scissors, .paper):
-            gameResponse = GameResponse(gameResult: .user, descriptionText: scissorsBeatsPaper)
+            gameResponse = GameResponse(gameResult: .cpu, descriptionText: scissorsBeatsPaper)
             return gameResponse
         case (.scissors, .scissors):
             gameResponse = GameResponse(gameResult: .draw, descriptionText: nothingBeats)
