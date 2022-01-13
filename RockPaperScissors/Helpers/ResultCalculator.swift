@@ -28,9 +28,9 @@ class ResultCalculator {
         case 1,4,7:
             return UserChoice.rock
         case 2,5,8:
-            return UserChoice.scissors
-        case 3,6,9:
             return UserChoice.paper
+        case 3,6,9:
+            return UserChoice.scissors
         default:
             return nil
         }
