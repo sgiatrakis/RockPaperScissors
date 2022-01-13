@@ -7,13 +7,6 @@
 
 import Foundation
 
-public enum UserChoice {
-    case rock
-    case scissors
-    case paper
-}
-
-
 class ResultCalculator {
     
     public static let shared = ResultCalculator()

@@ -17,4 +17,11 @@ class TimeHelper {
         return calendar.component(.second, from: date)
     }
     
+    func getCurrentTime() -> String {
+        let date = Date()
+        let df = DateFormatter()
+        df.dateFormat = "HH:mm:ss"
+        return df.string(from: date)
+    }
+    
 }

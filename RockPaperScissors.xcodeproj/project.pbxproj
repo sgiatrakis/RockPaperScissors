@@ -23,6 +23,8 @@
 		70984AA1278DB0A1004427AE /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70984AA0278DB0A1004427AE /* Date+Extension.swift */; };
 		70984AA4278DC43C004427AE /* TimeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70984AA3278DC43C004427AE /* TimeHelper.swift */; };
 		70984AA6278DC98D004427AE /* ResultCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70984AA5278DC98D004427AE /* ResultCalculator.swift */; };
+		70AF55DF27905F5900C2695B /* GameEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AF55DE27905F5900C2695B /* GameEngine.swift */; };
+		70AF55E12790620A00C2695B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AF55E02790620A00C2695B /* Constants.swift */; };
 		70D28E742785BEDC007886A2 /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D28E732785BEDC007886A2 /* RequestBuilder.swift */; };
 		70D28E772785BF3E007886A2 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D28E762785BF3E007886A2 /* Network.swift */; };
 		70D28E792785BFE8007886A2 /* BTCResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D28E782785BFE8007886A2 /* BTCResponse.swift */; };
@@ -72,6 +74,8 @@
 		70984AA0278DB0A1004427AE /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		70984AA3278DC43C004427AE /* TimeHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeHelper.swift; sourceTree = "<group>"; };
 		70984AA5278DC98D004427AE /* ResultCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultCalculator.swift; sourceTree = "<group>"; };
+		70AF55DE27905F5900C2695B /* GameEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameEngine.swift; sourceTree = "<group>"; };
+		70AF55E02790620A00C2695B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		70D28E732785BEDC007886A2 /* RequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
 		70D28E762785BF3E007886A2 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		70D28E782785BFE8007886A2 /* BTCResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTCResponse.swift; sourceTree = "<group>"; };
@@ -219,6 +223,8 @@
 				70984AA2278DB0A9004427AE /* Extensions */,
 				70984AA3278DC43C004427AE /* TimeHelper.swift */,
 				70984AA5278DC98D004427AE /* ResultCalculator.swift */,
+				70AF55DE27905F5900C2695B /* GameEngine.swift */,
+				70AF55E02790620A00C2695B /* Constants.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -500,6 +506,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				70984A9C278DABE8004427AE /* GameViewModel.swift in Sources */,
+				70AF55DF27905F5900C2695B /* GameEngine.swift in Sources */,
 				70D28E742785BEDC007886A2 /* RequestBuilder.swift in Sources */,
 				70D28E792785BFE8007886A2 /* BTCResponse.swift in Sources */,
 				7095CB5E2784C5C5002C9911 /* StartingView.swift in Sources */,
@@ -515,6 +522,7 @@
 				70984AA1278DB0A1004427AE /* Date+Extension.swift in Sources */,
 				7095CB5C2784C5C5002C9911 /* RockPaperScissorsApp.swift in Sources */,
 				70D28E7B2785C6AE007886A2 /* Repository.swift in Sources */,
+				70AF55E12790620A00C2695B /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

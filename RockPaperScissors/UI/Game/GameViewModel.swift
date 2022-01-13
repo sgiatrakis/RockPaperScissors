@@ -9,7 +9,10 @@ import Foundation
 
 class GameViewModel: BaseViewModel {
     
-//    @Published var data = String()
+    @Published var cpuAnswer: UserChoice?
+    @Published var userAnswer: UserChoice?
+    
+    let gameEngine = GameEngine()
     
     override init() {
         super.init()
@@ -39,9 +42,12 @@ class GameViewModel: BaseViewModel {
             // Curent seconds
             let now = TimeHelper.shared.getCurrentSeconds()
             
-            let result = ResultCalculator.shared.fetchCPUResult(seconds: now, rate: safeBtcPrices.bpi.usd.rateText)
-            
+            self.cpuAnswer = ResultCalculator.shared.fetchCPUResult(seconds: now, rate: safeBtcPrices.bpi.usd.rateText)
         }
+    }
+    
+    private func getGameResult() -> String {
+        return ""
     }
     
 }

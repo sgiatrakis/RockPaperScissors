@@ -11,6 +11,7 @@ struct GameView: View {
     
     @StateObject var viewModel = GameViewModel()
     @State var activeSelection = 0
+    @State var showResults = false
     
     var body: some View {
         BaseView() {
@@ -26,7 +27,7 @@ struct GameView: View {
                         Image("scissors")
                             .opacity(0.2)
                     }
-                    Text("CPU answered at \(Date.now).")
+                    Text("CPU answered at \(TimeHelper.shared.getCurrentTime())")
                 }
                 VStack {
                     Text("YOU")
@@ -54,10 +55,18 @@ struct GameView: View {
                 }
                 VStack {
                     Button {
+                        guard activeSelection != 0 else { return }
+                        viewModel.userAnswer = UserChoice(rawValue: activeSelection)
+                        guard viewModel.gameEngine.getGameResult(cpuAnswer: viewModel.cpuAnswer, userAnswer: viewModel.userAnswer) != nil else { return }
+                        showResults = true
                     } label: {
                         BaseTextLink(customText: "CHECK FOR RESULT", bgColor: .pink)
                     }
                 }
+                VStack {
+//                    let _ = print("RESULT cpu: \(viewModel.cpuAnswer) user: \(viewModel.userAnswer)")
+                    Text("\(viewModel.gameEngine.gameResponse.gameResult.rawValue) \(viewModel.gameEngine.gameResponse.descriptionText)")
+                }.opacity(showResults ? 1 : 0)
                 .padding(.top, 15)
                 Spacer()
             }
@@ -73,6 +82,3 @@ struct GameView_Previews: PreviewProvider {
         GameView()
     }
 }
-
-
-//frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: 150, alignment: .topLeading)
