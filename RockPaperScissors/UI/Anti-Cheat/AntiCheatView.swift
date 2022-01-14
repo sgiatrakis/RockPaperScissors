@@ -46,8 +46,9 @@ struct AntiCheatView: View {
                 }
             }.padding(16)
             Spacer()
-        }.navigationBarTitle("Anti-Cheat")
-            .navigationBarTitleDisplayMode(.inline)
+        }
+        .navigationBarTitle("Anti-Cheat")
+        .navigationBarTitleDisplayMode(.inline)
     }
     
 }

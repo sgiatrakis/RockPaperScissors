@@ -23,7 +23,7 @@ struct StartingView: View {
                         NavigationLink(destination: GameView()) {
                             BaseTextLink(customText: "PLAY GAME!")
                         }
-                        NavigationLink(destination: GameView()) {
+                        NavigationLink(destination: LeaderBoardView()) {
                             BaseTextLink(customText: "LEADERBOARD", bgColor: .pink)
                         }
                         NavigationLink(destination: GameView()) {

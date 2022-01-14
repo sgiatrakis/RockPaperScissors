@@ -30,6 +30,10 @@
 		70A503A727919C37008AB3ED /* Leaderboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A503A627919C37008AB3ED /* Leaderboard.swift */; };
 		70AF55DF27905F5900C2695B /* GameEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AF55DE27905F5900C2695B /* GameEngine.swift */; };
 		70AF55E12790620A00C2695B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AF55E02790620A00C2695B /* Constants.swift */; };
+		70B728A32791EC1C00FC048C /* LeaderBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B728A22791EC1C00FC048C /* LeaderBoardView.swift */; };
+		70B728A52791EC7C00FC048C /* LeaderBoardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B728A42791EC7C00FC048C /* LeaderBoardViewModel.swift */; };
+		70B728A72791F09A00FC048C /* BaseFullWidthHStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B728A62791F09A00FC048C /* BaseFullWidthHStack.swift */; };
+		70B728A92791F39500FC048C /* PlayerStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B728A82791F39500FC048C /* PlayerStats.swift */; };
 		70D28E742785BEDC007886A2 /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D28E732785BEDC007886A2 /* RequestBuilder.swift */; };
 		70D28E772785BF3E007886A2 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D28E762785BF3E007886A2 /* Network.swift */; };
 		70D28E792785BFE8007886A2 /* BTCResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D28E782785BFE8007886A2 /* BTCResponse.swift */; };
@@ -86,6 +90,10 @@
 		70A503A627919C37008AB3ED /* Leaderboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Leaderboard.swift; sourceTree = "<group>"; };
 		70AF55DE27905F5900C2695B /* GameEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameEngine.swift; sourceTree = "<group>"; };
 		70AF55E02790620A00C2695B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		70B728A22791EC1C00FC048C /* LeaderBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoardView.swift; sourceTree = "<group>"; };
+		70B728A42791EC7C00FC048C /* LeaderBoardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoardViewModel.swift; sourceTree = "<group>"; };
+		70B728A62791F09A00FC048C /* BaseFullWidthHStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseFullWidthHStack.swift; sourceTree = "<group>"; };
+		70B728A82791F39500FC048C /* PlayerStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerStats.swift; sourceTree = "<group>"; };
 		70D28E732785BEDC007886A2 /* RequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
 		70D28E762785BF3E007886A2 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		70D28E782785BFE8007886A2 /* BTCResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTCResponse.swift; sourceTree = "<group>"; };
@@ -207,6 +215,7 @@
 				70984A91278CC6B1004427AE /* BaseAlert.swift */,
 				70984A95278CC993004427AE /* BaseTextLink.swift */,
 				70984A97278CCA3D004427AE /* BaseLoader.swift */,
+				70B728A62791F09A00FC048C /* BaseFullWidthHStack.swift */,
 			);
 			path = "Base Elements";
 			sourceTree = "<group>";
@@ -283,6 +292,16 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		70B728A12791EBFD00FC048C /* LeaderBoard */ = {
+			isa = PBXGroup;
+			children = (
+				70B728A22791EC1C00FC048C /* LeaderBoardView.swift */,
+				70B728A42791EC7C00FC048C /* LeaderBoardViewModel.swift */,
+				70B728A82791F39500FC048C /* PlayerStats.swift */,
+			);
+			path = LeaderBoard;
+			sourceTree = "<group>";
+		};
 		70D28E712785BE94007886A2 /* API */ = {
 			isa = PBXGroup;
 			children = (
@@ -298,9 +317,10 @@
 			isa = PBXGroup;
 			children = (
 				70984A8E278CC61F004427AE /* Base Elements */,
+				70984A99278DABCB004427AE /* Starting */,
+				70B728A12791EBFD00FC048C /* LeaderBoard */,
 				70984A9A278DABD2004427AE /* Game */,
 				70A5039A2790A5A9008AB3ED /* Anti-Cheat */,
-				70984A99278DABCB004427AE /* Starting */,
 				7095CB5B2784C5C5002C9911 /* RockPaperScissorsApp.swift */,
 			);
 			path = UI;
@@ -555,6 +575,7 @@
 				70A5039C2790A5BA008AB3ED /* AntiCheatView.swift in Sources */,
 				70984A9C278DABE8004427AE /* GameViewModel.swift in Sources */,
 				70A503A727919C37008AB3ED /* Leaderboard.swift in Sources */,
+				70B728A52791EC7C00FC048C /* LeaderBoardViewModel.swift in Sources */,
 				70AF55DF27905F5900C2695B /* GameEngine.swift in Sources */,
 				70D28E742785BEDC007886A2 /* RequestBuilder.swift in Sources */,
 				70D28E792785BFE8007886A2 /* BTCResponse.swift in Sources */,
@@ -568,12 +589,15 @@
 				70984A92278CC6B1004427AE /* BaseAlert.swift in Sources */,
 				70A5039F2791992A008AB3ED /* RealmLayer.swift in Sources */,
 				70A503A12791996B008AB3ED /* BaseData.swift in Sources */,
+				70B728A32791EC1C00FC048C /* LeaderBoardView.swift in Sources */,
 				70984AA6278DC98D004427AE /* ResultCalculator.swift in Sources */,
 				70984AA4278DC43C004427AE /* TimeHelper.swift in Sources */,
 				70A503A4279199CE008AB3ED /* LeaderBoardData.swift in Sources */,
 				70984AA1278DB0A1004427AE /* Date+Extension.swift in Sources */,
 				7095CB5C2784C5C5002C9911 /* RockPaperScissorsApp.swift in Sources */,
 				70D28E7B2785C6AE007886A2 /* Repository.swift in Sources */,
+				70B728A92791F39500FC048C /* PlayerStats.swift in Sources */,
+				70B728A72791F09A00FC048C /* BaseFullWidthHStack.swift in Sources */,
 				70AF55E12790620A00C2695B /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

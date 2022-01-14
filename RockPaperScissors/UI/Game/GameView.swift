@@ -89,8 +89,9 @@ struct GameView: View {
                 BaseLoader()
                 Spacer()
             }
-        }.navigationBarTitle("Play New Game")
-            .navigationBarTitleDisplayMode(.inline)
+        }
+        .navigationBarTitle("Play New Game")
+        .navigationBarTitleDisplayMode(.inline)
     }
     
 }

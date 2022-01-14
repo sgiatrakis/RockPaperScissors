@@ -78,18 +78,18 @@ class GameEngine {
     private func checkRealm(_ gameResponse: GameResponse) {
         // Check if a LeaderBoardData already exists & update Realm
         guard realmLayer.leaderBoardData.fetchLeaderBoard() == nil else {
-            updateRealm()
+            updateRealm(gameResponse.gameResult)
             return
         }
-        
         // Create a new LeaderBoardData & update Realm
         if realmLayer.leaderBoardData.createLeaderBoard() {
-            updateRealm()
+            updateRealm(gameResponse.gameResult)
         }
     }
     
-    private func updateRealm() {
-        
+    private func updateRealm(_ gameResult: GameResult) {
+        let win = realmLayer.leaderBoardData.setLeaderBoardWin(gameResult)
+        print("Sent to Realm LocalDB and the result it's \(win)")
     }
     
 }

@@ -32,4 +32,24 @@ final class LeaderBoardData: BaseData {
         return queryResult.cpuWins
     }
     
+    public func setLeaderBoardWin(_ gameResult: GameResult) -> Bool {
+        guard let leaderboard = fetchLeaderBoard() else { return false }
+        do {
+            try realm.write {
+                switch gameResult {
+                case .cpu:
+                    leaderboard.cpuWins += 1
+                case.user:
+                    leaderboard.userWins += 1
+                case .draw:
+                    break
+                }
+            }
+            return true
+        } catch {
+            print("LeaderBoardData - \(#function) error:", error)
+            return false
+        }
+    }
+    
 }
