@@ -14,9 +14,9 @@ public enum UserChoice: Int {
 }
 
 public enum GameResult: String {
-    case user = "User won!"
-    case cpu = "CPU won!"
-    case draw = "We have a draw!"
+    case user = "User won! 😁"
+    case cpu = "CPU won! 😥"
+    case draw = "We have a draw! 😐"
 }
 
 public struct GameResponse {

@@ -29,7 +29,7 @@ struct AntiCheatView: View {
                 }
                 Text("At this time BTC price was: \(btcPrice)")
                 HStack {
-                    Text("So BTC last digit was")
+                    Text("So BTC last digit was:")
                     Spacer()
                     if let lastChar = btcPrice.last {
                         Text(String(lastChar))
