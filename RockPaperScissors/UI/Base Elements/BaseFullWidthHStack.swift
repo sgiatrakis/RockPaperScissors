@@ -9,8 +9,9 @@ import SwiftUI
 
 struct BaseFullWidthHStack: View {
     
-    let text: String
-    let bgColor: Color = .indigo
+    var text: String
+    var bgColor: Color = .pink
+    var borderColor: Color = .indigo
 
     var body: some View {
         HStack {
@@ -21,8 +22,8 @@ struct BaseFullWidthHStack: View {
             Spacer()
         }
         .padding(EdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 0))
-        .background(.cyan)
-        .border(.indigo, width: 3)
+        .background(bgColor)
+        .border(borderColor, width: 3)
     }
     
 }

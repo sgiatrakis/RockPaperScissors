@@ -25,16 +25,16 @@ struct LeaderBoardView: View {
                 }
             }.frame(maxWidth: .infinity)
             
-            ForEach((0..<viewModel.playerStats.count)) { index in
+            ForEach(Array(viewModel.playerStats.enumerated()), id: \.element) { index, player in
                 HStack {
                     VStack {
-                        BaseFullWidthHStack(text: String(index + 1))
+                        BaseFullWidthHStack(text: String(index + 1), bgColor: .mint)
                     }
                     VStack {
-                        BaseFullWidthHStack(text: viewModel.playerStats[index].name)
+                        BaseFullWidthHStack(text: player.name, bgColor: .mint)
                     }
                     VStack {
-                        BaseFullWidthHStack(text: String(viewModel.playerStats[index].wins))
+                        BaseFullWidthHStack(text: String(player.wins), bgColor: .mint)
                     }
                 }.frame(maxWidth: .infinity)
                 
@@ -50,7 +50,14 @@ struct LeaderBoardView: View {
 
 struct LeaderBoardView_Previews: PreviewProvider {
     static var previews: some View {
-        LeaderBoardView()
+        // Dummy Data just for Preview
+        let vm = LeaderBoardViewModel()
+        let player1 = PlayerStats(name: "Lorem", wins: 45)
+        let player2 = PlayerStats(name: "Ipsum", wins: 10)
+        vm.playerStats.append(player1)
+        vm.playerStats.append(player2)
+        
+        return LeaderBoardView(viewModel: vm)
     }
 }
 

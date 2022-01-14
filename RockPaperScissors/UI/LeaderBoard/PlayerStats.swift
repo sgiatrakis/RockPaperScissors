@@ -7,9 +7,17 @@
 
 import Foundation
 
-public struct PlayerStats {
+public struct PlayerStats: Hashable {
     
     var name: String
     var wins: Int
+    
+    public static func == (lhs: PlayerStats, rhs: PlayerStats) -> Bool {
+        return lhs.name == rhs.name
+    }
+
+    public func hash(into hasher: inout Hasher) {
+        hasher.combine(name)
+    }
     
 }
