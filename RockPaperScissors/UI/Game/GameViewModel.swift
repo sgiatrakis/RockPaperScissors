@@ -53,7 +53,10 @@ class GameViewModel: BaseViewModel {
             // If ResultCalculator returns nil, that means we have a resultLastInt equal to 0 and we need to re-fetch for a different result.
             guard cpuResult != nil else {
                 self.isFetched = false
-                self.fetchData()
+                // Results Fetch as almost instant, so just for demo purposes we set a slight delay
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                    self.fetchData()
+                }
                 return
             }
             
