@@ -26,7 +26,11 @@ public struct GameResponse {
 
 class GameEngine {
     
-    init() {}
+    let realmLayer: RealmLayer
+    
+    init() {
+        realmLayer = RealmLayer.shared
+    }
     
     var gameResponse = GameResponse()
     
@@ -34,6 +38,12 @@ class GameEngine {
         guard let cpuAnswer = cpuAnswer,
               let userAnswer = userAnswer else { return nil }
         
+        let gameResponse = calcGameResponse(cpuAnswer: cpuAnswer, userAnswer: userAnswer)
+        checkRealm(gameResponse)
+        return gameResponse
+    }
+    
+    private func calcGameResponse(cpuAnswer: UserChoice, userAnswer: UserChoice) -> GameResponse {
         switch (cpuAnswer, userAnswer) {
         case (.rock, .rock):
             gameResponse = GameResponse(gameResult: .draw, descriptionText: nothingBeats)
@@ -65,8 +75,21 @@ class GameEngine {
         }
     }
     
+    private func checkRealm(_ gameResponse: GameResponse) {
+        // Check if a LeaderBoardData already exists & update Realm
+        guard realmLayer.leaderBoardData.fetchLeaderBoard() == nil else {
+            updateRealm()
+            return
+        }
+        
+        // Create a new LeaderBoardData & update Realm
+        if realmLayer.leaderBoardData.createLeaderBoard() {
+            updateRealm()
+        }
+    }
+    
     private func updateRealm() {
-        // TODO
+        
     }
     
 }

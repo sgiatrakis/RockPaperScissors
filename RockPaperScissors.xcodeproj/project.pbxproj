@@ -24,6 +24,10 @@
 		70984AA4278DC43C004427AE /* TimeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70984AA3278DC43C004427AE /* TimeHelper.swift */; };
 		70984AA6278DC98D004427AE /* ResultCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70984AA5278DC98D004427AE /* ResultCalculator.swift */; };
 		70A5039C2790A5BA008AB3ED /* AntiCheatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A5039B2790A5BA008AB3ED /* AntiCheatView.swift */; };
+		70A5039F2791992A008AB3ED /* RealmLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A5039E2791992A008AB3ED /* RealmLayer.swift */; };
+		70A503A12791996B008AB3ED /* BaseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A503A02791996B008AB3ED /* BaseData.swift */; };
+		70A503A4279199CE008AB3ED /* LeaderBoardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A503A3279199CE008AB3ED /* LeaderBoardData.swift */; };
+		70A503A727919C37008AB3ED /* Leaderboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A503A627919C37008AB3ED /* Leaderboard.swift */; };
 		70AF55DF27905F5900C2695B /* GameEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AF55DE27905F5900C2695B /* GameEngine.swift */; };
 		70AF55E12790620A00C2695B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AF55E02790620A00C2695B /* Constants.swift */; };
 		70D28E742785BEDC007886A2 /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D28E732785BEDC007886A2 /* RequestBuilder.swift */; };
@@ -76,6 +80,10 @@
 		70984AA3278DC43C004427AE /* TimeHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeHelper.swift; sourceTree = "<group>"; };
 		70984AA5278DC98D004427AE /* ResultCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultCalculator.swift; sourceTree = "<group>"; };
 		70A5039B2790A5BA008AB3ED /* AntiCheatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AntiCheatView.swift; sourceTree = "<group>"; };
+		70A5039E2791992A008AB3ED /* RealmLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmLayer.swift; sourceTree = "<group>"; };
+		70A503A02791996B008AB3ED /* BaseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseData.swift; sourceTree = "<group>"; };
+		70A503A3279199CE008AB3ED /* LeaderBoardData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoardData.swift; sourceTree = "<group>"; };
+		70A503A627919C37008AB3ED /* Leaderboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Leaderboard.swift; sourceTree = "<group>"; };
 		70AF55DE27905F5900C2695B /* GameEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameEngine.swift; sourceTree = "<group>"; };
 		70AF55E02790620A00C2695B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		70D28E732785BEDC007886A2 /* RequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
@@ -166,6 +174,7 @@
 			children = (
 				70D28E712785BE94007886A2 /* API */,
 				70D28E722785BEA1007886A2 /* UI */,
+				70A5039D27919902008AB3ED /* Realm */,
 				70984A9F278DAEB1004427AE /* Helpers */,
 				7095CB5F2784C5C6002C9911 /* Assets.xcassets */,
 				70FDC0B32784C84000AA8478 /* Info.plist */,
@@ -245,6 +254,33 @@
 				70A5039B2790A5BA008AB3ED /* AntiCheatView.swift */,
 			);
 			path = "Anti-Cheat";
+			sourceTree = "<group>";
+		};
+		70A5039D27919902008AB3ED /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				70A503A22791999D008AB3ED /* Data Repositories */,
+				70A503A5279199EC008AB3ED /* Models */,
+				70A5039E2791992A008AB3ED /* RealmLayer.swift */,
+				70A503A02791996B008AB3ED /* BaseData.swift */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		70A503A22791999D008AB3ED /* Data Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				70A503A3279199CE008AB3ED /* LeaderBoardData.swift */,
+			);
+			path = "Data Repositories";
+			sourceTree = "<group>";
+		};
+		70A503A5279199EC008AB3ED /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				70A503A627919C37008AB3ED /* Leaderboard.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		70D28E712785BE94007886A2 /* API */ = {
@@ -518,6 +554,7 @@
 			files = (
 				70A5039C2790A5BA008AB3ED /* AntiCheatView.swift in Sources */,
 				70984A9C278DABE8004427AE /* GameViewModel.swift in Sources */,
+				70A503A727919C37008AB3ED /* Leaderboard.swift in Sources */,
 				70AF55DF27905F5900C2695B /* GameEngine.swift in Sources */,
 				70D28E742785BEDC007886A2 /* RequestBuilder.swift in Sources */,
 				70D28E792785BFE8007886A2 /* BTCResponse.swift in Sources */,
@@ -529,8 +566,11 @@
 				70984A90278CC66B004427AE /* BaseView.swift in Sources */,
 				70984A96278CC993004427AE /* BaseTextLink.swift in Sources */,
 				70984A92278CC6B1004427AE /* BaseAlert.swift in Sources */,
+				70A5039F2791992A008AB3ED /* RealmLayer.swift in Sources */,
+				70A503A12791996B008AB3ED /* BaseData.swift in Sources */,
 				70984AA6278DC98D004427AE /* ResultCalculator.swift in Sources */,
 				70984AA4278DC43C004427AE /* TimeHelper.swift in Sources */,
+				70A503A4279199CE008AB3ED /* LeaderBoardData.swift in Sources */,
 				70984AA1278DB0A1004427AE /* Date+Extension.swift in Sources */,
 				7095CB5C2784C5C5002C9911 /* RockPaperScissorsApp.swift in Sources */,
 				70D28E7B2785C6AE007886A2 /* Repository.swift in Sources */,
