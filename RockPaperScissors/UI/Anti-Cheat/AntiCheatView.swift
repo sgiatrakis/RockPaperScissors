@@ -14,7 +14,7 @@ struct AntiCheatView: View {
     @State var cpuAnswer: UserChoice = .rock
     
     var body: some View {
-        BaseView() {
+        BaseView(showNavItem: true) {
             VStack(alignment: .leading, spacing: 12) {
                 Image("anti-cheat")
                 Text("Explicitly in the last game:")

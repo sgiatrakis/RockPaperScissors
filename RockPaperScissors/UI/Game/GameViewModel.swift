@@ -32,12 +32,13 @@ class GameViewModel: BaseViewModel {
             
             // Handle Error
             if let error = error {
-                self.viewAlert.setActive(message: error.localizedDescription)
+                self.viewAlert.setActive(message: String(describing: error))
                 return
             }
             
+            // Handle unwrap error
             guard let safeBtcPrices = btcPrices else {
-                print("Response DTO unwrap error")
+                self.viewAlert.setActive(message: "Response unwrap error")
                 return
             }
             
@@ -65,6 +66,7 @@ class GameViewModel: BaseViewModel {
     }
     
     public func restartGame() {
+        isFetched = false
         cpuAnswer = nil
         userAnswer = nil
         fetchData()

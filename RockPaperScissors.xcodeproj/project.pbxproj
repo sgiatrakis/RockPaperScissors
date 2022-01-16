@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		494A26A7CB54D8B6BBEB53F9 /* Pods_RockPaperScissors.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 982DE67F5ECB3F4FC897A901 /* Pods_RockPaperScissors.framework */; };
+		7087DDE5279490C500AE660E /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7087DDE4279490C500AE660E /* AboutView.swift */; };
+		7087DDE7279493E400AE660E /* BaseNavItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7087DDE6279493E400AE660E /* BaseNavItem.swift */; };
 		7095CB5C2784C5C5002C9911 /* RockPaperScissorsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7095CB5B2784C5C5002C9911 /* RockPaperScissorsApp.swift */; };
 		7095CB5E2784C5C5002C9911 /* StartingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7095CB5D2784C5C5002C9911 /* StartingView.swift */; };
 		7095CB602784C5C6002C9911 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7095CB5F2784C5C6002C9911 /* Assets.xcassets */; };
@@ -65,6 +67,8 @@
 		547DE9C421849B8BB872C37E /* Pods-RockPaperScissors-RockPaperScissorsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RockPaperScissors-RockPaperScissorsUITests.debug.xcconfig"; path = "Target Support Files/Pods-RockPaperScissors-RockPaperScissorsUITests/Pods-RockPaperScissors-RockPaperScissorsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5A81A460288A2C166CE43115 /* Pods-RockPaperScissors-RockPaperScissorsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RockPaperScissors-RockPaperScissorsUITests.release.xcconfig"; path = "Target Support Files/Pods-RockPaperScissors-RockPaperScissorsUITests/Pods-RockPaperScissors-RockPaperScissorsUITests.release.xcconfig"; sourceTree = "<group>"; };
 		706D150CEDEF8AFADDD79314 /* Pods_RockPaperScissors_RockPaperScissorsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RockPaperScissors_RockPaperScissorsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7087DDE4279490C500AE660E /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		7087DDE6279493E400AE660E /* BaseNavItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavItem.swift; sourceTree = "<group>"; };
 		7095CB582784C5C5002C9911 /* RockPaperScissors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RockPaperScissors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7095CB5B2784C5C5002C9911 /* RockPaperScissorsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockPaperScissorsApp.swift; sourceTree = "<group>"; };
 		7095CB5D2784C5C5002C9911 /* StartingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartingView.swift; sourceTree = "<group>"; };
@@ -156,6 +160,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		7087DDE3279490A700AE660E /* About */ = {
+			isa = PBXGroup;
+			children = (
+				7087DDE4279490C500AE660E /* AboutView.swift */,
+			);
+			path = About;
+			sourceTree = "<group>";
+		};
 		7095CB4F2784C5C5002C9911 = {
 			isa = PBXGroup;
 			children = (
@@ -216,6 +228,7 @@
 				70984A95278CC993004427AE /* BaseTextLink.swift */,
 				70984A97278CCA3D004427AE /* BaseLoader.swift */,
 				70B728A62791F09A00FC048C /* BaseFullWidthHStack.swift */,
+				7087DDE6279493E400AE660E /* BaseNavItem.swift */,
 			);
 			path = "Base Elements";
 			sourceTree = "<group>";
@@ -321,6 +334,7 @@
 				70B728A12791EBFD00FC048C /* LeaderBoard */,
 				70984A9A278DABD2004427AE /* Game */,
 				70A5039A2790A5A9008AB3ED /* Anti-Cheat */,
+				7087DDE3279490A700AE660E /* About */,
 				7095CB5B2784C5C5002C9911 /* RockPaperScissorsApp.swift */,
 			);
 			path = UI;
@@ -580,6 +594,7 @@
 				70D28E742785BEDC007886A2 /* RequestBuilder.swift in Sources */,
 				70D28E792785BFE8007886A2 /* BTCResponse.swift in Sources */,
 				7095CB5E2784C5C5002C9911 /* StartingView.swift in Sources */,
+				7087DDE5279490C500AE660E /* AboutView.swift in Sources */,
 				70D28E772785BF3E007886A2 /* Network.swift in Sources */,
 				70984A94278CC799004427AE /* GameView.swift in Sources */,
 				70984A98278CCA3D004427AE /* BaseLoader.swift in Sources */,
@@ -587,6 +602,7 @@
 				70984A90278CC66B004427AE /* BaseView.swift in Sources */,
 				70984A96278CC993004427AE /* BaseTextLink.swift in Sources */,
 				70984A92278CC6B1004427AE /* BaseAlert.swift in Sources */,
+				7087DDE7279493E400AE660E /* BaseNavItem.swift in Sources */,
 				70A5039F2791992A008AB3ED /* RealmLayer.swift in Sources */,
 				70A503A12791996B008AB3ED /* BaseData.swift in Sources */,
 				70B728A32791EC1C00FC048C /* LeaderBoardView.swift in Sources */,

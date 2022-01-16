@@ -13,7 +13,7 @@ struct GameView: View {
     @State var showResults = false
     
     var body: some View {
-        BaseView(viewAlert: $viewModel.viewAlert) {
+        BaseView(viewAlert: $viewModel.viewAlert, showNavItem: true) {
             if viewModel.isFetched {
                 VStack(spacing: 20) {
                     VStack {
