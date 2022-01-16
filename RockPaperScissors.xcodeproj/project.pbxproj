@@ -14,7 +14,7 @@
 		7095CB5E2784C5C5002C9911 /* StartingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7095CB5D2784C5C5002C9911 /* StartingView.swift */; };
 		7095CB602784C5C6002C9911 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7095CB5F2784C5C6002C9911 /* Assets.xcassets */; };
 		7095CB632784C5C6002C9911 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7095CB622784C5C6002C9911 /* Preview Assets.xcassets */; };
-		7095CB6D2784C5C6002C9911 /* RockPaperScissorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7095CB6C2784C5C6002C9911 /* RockPaperScissorsTests.swift */; };
+		7095CB6D2784C5C6002C9911 /* RepoDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7095CB6C2784C5C6002C9911 /* RepoDataTests.swift */; };
 		70984A90278CC66B004427AE /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70984A8F278CC66B004427AE /* BaseView.swift */; };
 		70984A92278CC6B1004427AE /* BaseAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70984A91278CC6B1004427AE /* BaseAlert.swift */; };
 		70984A94278CC799004427AE /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70984A93278CC799004427AE /* GameView.swift */; };
@@ -75,7 +75,7 @@
 		7095CB5F2784C5C6002C9911 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7095CB622784C5C6002C9911 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7095CB682784C5C6002C9911 /* RockPaperScissorsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RockPaperScissorsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7095CB6C2784C5C6002C9911 /* RockPaperScissorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockPaperScissorsTests.swift; sourceTree = "<group>"; };
+		7095CB6C2784C5C6002C9911 /* RepoDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoDataTests.swift; sourceTree = "<group>"; };
 		7095CB722784C5C6002C9911 /* RockPaperScissorsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RockPaperScissorsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		70984A8F278CC66B004427AE /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		70984A91278CC6B1004427AE /* BaseAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAlert.swift; sourceTree = "<group>"; };
@@ -214,7 +214,7 @@
 		7095CB6B2784C5C6002C9911 /* RockPaperScissorsTests */ = {
 			isa = PBXGroup;
 			children = (
-				7095CB6C2784C5C6002C9911 /* RockPaperScissorsTests.swift */,
+				7095CB6C2784C5C6002C9911 /* RepoDataTests.swift */,
 			);
 			path = RockPaperScissorsTests;
 			sourceTree = "<group>";
@@ -622,7 +622,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7095CB6D2784C5C6002C9911 /* RockPaperScissorsTests.swift in Sources */,
+				7095CB6D2784C5C6002C9911 /* RepoDataTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
