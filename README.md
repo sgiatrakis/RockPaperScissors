@@ -1,8 +1,8 @@
-# Sweepbright assignment - Rock Paper Scissors Game
+# Rock Paper Scissors Game
 
 ## About
 
-Sweepbright app challenge
+Simple iOS game demonstrating how local database (Realm) could work alongside with REST API.
 
 
 ## How to Run
@@ -23,9 +23,9 @@ Sweepbright app challenge
 - Added repoDataTests for a simple check of Repository Data
 
 
-## Anti-Cheat Algorithm
+## Anti-Cheat Algorithm (REST API)
 
-- I've used a simple algorithm that combines an API Rest Fetch (Bitcoin live rate) & the local time that CPU locked it's answer.
+- Simple algorithm that combines an API Rest Fetch (Bitcoin live rate) & the local time that CPU locked it's answer.
 
 
 ## Contact
@@ -33,5 +33,3 @@ Sweepbright app challenge
 Email: sgiatrakis[at]gmail.com
 
 LinkedIN: linkedin.com/in/giatrakis
-
-Phone: (+30)6983460512
